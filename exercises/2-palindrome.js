@@ -8,5 +8,12 @@
 //   palindrome("madam") === true
 //   palindrome("codingmoney") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+    let reversed = str.split('').reverse().join('');
 
+    if (reversed === str) {
+        return true;
+    }
+}
+
+console.log(palindrome('kayak'));
