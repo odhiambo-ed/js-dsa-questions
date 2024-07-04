@@ -5,4 +5,14 @@
 //   reverse('hello') === 'olleh'
 //   reverse('CodingMoney') === 'yenoMgnidoC'
 
-function reverse(str) {}
+function reverse(str) {
+    reversed = '';
+
+    for (let char of str) {
+        reversed = char + reversed;
+    }
+
+    return reversed;
+}
+
+console.log(reverse('hi'));
