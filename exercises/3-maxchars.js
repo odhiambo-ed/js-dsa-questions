@@ -20,5 +20,7 @@ function maxChar(str) {
             maxChar = char;
         }
     }
+
+    return maxChar;
 }
-console.log(maxChar('abcccccccd'));
+console.log(maxChar('Edward'));
