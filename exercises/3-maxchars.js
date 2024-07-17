@@ -23,4 +23,4 @@ function maxChar(str) {
 
     return maxChar;
 }
-console.log(maxChar('Edward'));
+console.log(maxChar('Akshay'));
