@@ -7,6 +7,15 @@
 //   capitalize('what is titlecase?') --> 'What Is Titlecase?'
 //   capitalize('titles of books, movies, songs, plays and other works') --> 'Titles Of Books, Movies, Songs, Plays And Other Works'
 
-function capitalize(str) {}
+function capitalize(str) {
+    const words = str.split(' ');
+    const results = [];
+
+    for (word of words) {
+        results.push(word[0].toUpperCase() + word.slice(1))
+    }
+
+    return results.join(' ')
+}
 
 console.log(capitalize('this is mukhtar from coding money'));
