@@ -8,7 +8,16 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+    const cleanedStr = (str) => {
+        return str.replace(/\W/g, '').toLowerCase().split('').sort().join('')
+    }
+    cleanedStrA = cleanedStr(stringA);
+    cleanedStrB = cleanedStr(stringB);
 
+    return cleanedStrA === cleanedStrB
+}
 
 console.log(anagrams('RAIL! SAFETY!', 'fairy tales'));
+console.log(anagrams('coding money', 'money coding'));
+console.log(anagrams('Hi there', 'Bye there'));
